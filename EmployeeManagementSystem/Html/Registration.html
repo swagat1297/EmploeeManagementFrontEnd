@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UCF-8" />
+  <meta name="Swagat" content="width=device-width, initial-scale=1.0" />
+  <!-- <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script> -->
+  <title>Test Registration</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\KIIT\Videos\web\EmployeeManagementSystem\css\style.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <a href="C:\Users\KIIT\Videos\web\EmployeeManagementSystem\Html\signIn.html">
+      <button type="button" class="btn btn-outline-primary">Sign In</button>
+  </a>
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form id="form" action="#" class="sign-in-form" autocomplete="off">
+          <h2 class="title">Sign up</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="FirstName" id="FirstName" onkeyup="validateFirstName()" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="LastName" id="LastName" onkeyup="validateLastName()" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-phone"></i>
+            <input type="tel" placeholder="PhoneNumber" id="PhoneNumber" onkeyup="validateEmail()" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" id="Email" onkeyup="validateMobileNumber()" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" id="Password" onkeyup="validatePassword()" required />
+          </div>
+          <div id="error"></div>
+            <input type="submit" class="btn" value="Sign up" id="button">
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- <script type="text/javascript"> 
+        let register = new Registration();
+        </script> -->
+  <script src="../JavaScript/userRegistrationutility.js"></script>
+
+</body>
+
+</html>

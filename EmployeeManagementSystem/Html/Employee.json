@@ -1,0 +1,23 @@
+[
+    {
+        "FirstName": "Swagat",
+        "LastName": "Bahttacharjee",
+        "Email": "Swagat@gmail.com",
+        "Salary": "10000",
+        "City": "Guwahati"
+    },
+    {
+        "FirstName": "Jagjit",
+        "LastName": "Sing",
+        "Email": "jk@gmail.com",
+        "Salary": "70000",
+        "City": "Shillong"
+    },
+    {
+        "FirstName": "Devrath",
+        "LastName": "Somvanshi",
+        "Email": "Dev@gmail.com",
+        "Salary": "1010000",
+        "City": "Allahabad"
+    }
+]
