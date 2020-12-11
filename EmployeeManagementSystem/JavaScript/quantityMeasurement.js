@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $("#card1").on('click', function () {
         $("#card1").css( {"background":"#EDFDF9", "border":"1px solid #0EC098"});
