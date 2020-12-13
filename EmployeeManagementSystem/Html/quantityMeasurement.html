@@ -7,9 +7,6 @@
     <title>Quantitative Measurement</title>
     <link rel="stylesheet" href="../css/quantityMeasurement.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>
@@ -24,17 +21,17 @@
         <div class="inner-body">
             <p>choose type</p>
             <div class="container-box">
-                <div class="box1">
+                <div id="card1" class="box1">
                     <img>
-                    <div>Length</div>
+                    <div id="length">Length</div>
                 </div>
-                <div class="box2">
+                <div id="card2" class="box2">
                     <img>
-                    <div>Temperature</div>
+                    <div id="temperature">Temperature</div>
                 </div>
-                <div class="box3">
+                <div id="card3" class="box3">
                     <img>
-                    <div>Volume</div>
+                    <div id="voluem">Volume</div>
                 </div>
 
             </div>
@@ -45,11 +42,7 @@
                     </div>
                     <form class="form-input" action="/action_page.php">
                         <input type="number" name="field1" id="fromNumber" />
-                        <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
+                        <select name="select" id="convert1">
                         </select>
                     </form>
                 </div>
@@ -59,17 +52,18 @@
                     </div>
                     <form class="form-input" action="/action_page.php">
                         <input type="number" name="field2" id="toNumber" />
-                        <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
+                        <select name="select" id="convert2">
                         </select>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../JavaScript/quantityMeasurement.js">
+    </script>
 </body>
 
 </html>
