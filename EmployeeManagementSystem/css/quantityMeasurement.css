@@ -49,7 +49,7 @@ body{
     min-height: calc(100vh - 100px);
 }
 .inner-body{
-    width: 557px;
+    width: 48%;
     margin: 0 auto;
 }
 .allbody p{
@@ -57,8 +57,11 @@ body{
     color: #000000;
     text-transform: uppercase;
     opacity: 1;
+    margin-left: 2%;
+    font-weight: 500;
 }
 .container-box{
+    flex-wrap: wrap;
     position: relative;
     display: flex;
     width: 100%;
@@ -82,10 +85,6 @@ body{
 .box1:hover img{
     content: url("../image/scale-1.svg");
 }
-/* .box1:hover .length{
-    text-decoration-color: #0EC098;
-    text-transform: capitalize;
-} */
 .box1:hover {
     background: #EDFDF9 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -147,18 +146,42 @@ body{
     font-size: 17px;
     text-transform: capitalize;
 }
+.innerform{
+    width: 70%;
+    margin: 0 auto;
+}
 .container-form{
+    width: 48%;
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-
 }
 .From{
     flex-grow: 1;
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-left: 2%;
 }
 .To{
     flex-grow: 1;
+    margin-right: 12%;
+}
+.fromNumber{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+}
+.toNumber{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+}
+.convert1{
+    padding: 3px;
+}
+.convert2{
+    padding: 3px;
 }
 .container-form form{
     display: flex;
@@ -170,4 +193,38 @@ body{
 }
 .form-input input{
     border: 1px solid #E7DCFE;
+}
+.onclickcard1{
+    background: #EDFDF9 0% 0% no-repeat padding-box !important;
+    border: 1px solid #0EC098;
+    color: #0EC098;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.onclickcard2{
+    background: #FFEEF0 0% 0% no-repeat padding-box !important;
+    border: 1px solid #FD5160;
+    color: #FD5160;
+}
+.onclickcard3{
+    background: #E8DDFF 0% 0% no-repeat padding-box !important;
+    border: 1px solid #7224FF;
+    color: #7224FF;
+}
+.onclickcard1 img{
+    content: url("../image/scale-1.svg");
+}
+.onclickcard2 img{
+    content: url("../image/hot\ -1.svg");
+}
+.onclickcard3 img{
+    content: url("../image/beaker.svg");
+}
+@media (max-width: 960px){
+    .From{
+        width: 173px;
+    }
+    .To{
+        width: 173px;
+    }
 }
