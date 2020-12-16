@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantitative Measurement</title>
-    <link rel="stylesheet" href="../css/quantityMeasurement.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/quantityMeasurement.css" />
+    
 </head>
 
-<body>
+<body onload="loadFunction()">
     <div class="header">
         <h3 class="QuantText">Quanment</h3>
         <h4 class="history">History</h4>
@@ -35,27 +36,28 @@
                 </div>
 
             </div>
-            <div class="container-form">
-                <div class="From">
-                    <div>
-                        From
-                    </div>
-                    <form class="form-input" action="/action_page.php">
-                        <input type="number" name="field1" id="fromNumber" />
-                        <select name="select" id="convert1">
-                        </select>
-                    </form>
+            
+        </div>
+        <div class="container-form">
+            <div class="From">
+                <div>
+                    FROM
                 </div>
-                <div class="To">
-                    <div>
-                        To
-                    </div>
-                    <form class="form-input" action="/action_page.php">
-                        <input type="number" name="field2" id="toNumber" />
-                        <select name="select" id="convert2">
-                        </select>
-                    </form>
+                <form class="form-input">
+                    <input class="fromNumber" type="number" name="field1" placeholder="0"  id="fromNumber" oninput="converter(this.value)" onchange="converter(this.value)" />
+                    <select class="convert1" name="select" id="convert1" onchange="showResultOne(this.options[this.selectedIndex])">
+                    </select>
+                </form>
+            </div>
+            <div class="To">
+                <div>
+                    TO
                 </div>
+                <form class="form-input">
+                    <input class="toNumber" type="number" name="field2" placeholder="0" id="toNumber" />
+                    <select class="convert2" name="select" id="convert2" onchange="showResultTwo(this.options[this.selectedIndex])">
+                    </select>
+                </form>
             </div>
         </div>
     </div>
